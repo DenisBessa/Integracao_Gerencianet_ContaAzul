@@ -12,7 +12,7 @@ Para rodar o aplicativo, você deve informar as credenciais de cada uma das APIs
 
 O aplicativo ainda está em uma fase muito inicial, e não tem interface para emissão de boletos. Por isso, para emitir um boleto, siga as instruções:
 
-1. Execute o aplicativo utilizando o node.js, com o comando `\$ node app.js;
+1. Execute o aplicativo utilizando o node.js, com o comando `\$ node app.js`;
 
 2. Acesse o aplicativo no endereço `http://localhost` e anote o access token;
 

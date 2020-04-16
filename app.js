@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.get("/login", auth.authorize);
 app.get("/callback", auth.callback);
 app.get("/refresh_token", auth.refreshToken);
-app.get("/emite_boleto", gerencianetBoleto.emiteBoleto);
+app.post("/emite_boleto", gerencianetBoleto.emiteBoleto);
 
 console.log("Listening on 80");
 app.listen(80);

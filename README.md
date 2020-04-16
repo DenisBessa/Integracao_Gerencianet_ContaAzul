@@ -2,27 +2,18 @@
 
 ## Introdução
 
-Este é um pequeno aplicativo em node.js que exibe os dados
-
-This command will download all the dependencies required by this example.
+Este é um pequeno aplicativo em node.js que extrai os dados de vendas realizadas no ContaAzul, com filtros, e emite boletos da Gerencianet.
 
 ## Configurações
 
 Para rodar o aplicativo, você deve informar as credenciais de cada uma das APIs nos arquvos dentro da pasta config.
 
-## Running the example
+## Executando o aplicativo
 
-To run the example just execute this command in the _node_ directory :
+O aplicativo ainda está em uma fase muito inicial, e não tem interface para emissão de boletos. Por isso, para emitir um boleto, siga as instruções:
 
-`$ node app.js`
+1. Execute o aplicativo utilizando o node.js, com o comando `\$ node app.js;
 
-Then access the example in the browser in `http://localhost:/8888`
+2. Acesse o aplicativo no endereço `http://localhost` e anote o access token;
 
-## Dependencies
-
-This example uses some dependencies to assist some steps :
-
-- [cookie-parser](https://github.com/expressjs/cookie-parser) : stores and retrieves cookies
-- [express](https://github.com/expressjs/express) : web framework for node
-- [querystring](https://github.com/Gozala/querystring) : transform js objects in url params
-- [request](https://github.com/request/request) : make http calls to the ContaAzul API
+3. Para emitir um boleto, faça uma requisição POST neste formato: `localhost/emite_boleto?access_token={seu_access_token}&data_inicio={filtro_de_data_inicio}&{filtro_de_data_inicio}=2020-04-30`

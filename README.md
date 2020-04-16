@@ -16,4 +16,4 @@ O aplicativo ainda está em uma fase muito inicial, e não tem interface para em
 
 2. Acesse o aplicativo no endereço `http://localhost` e anote o access token;
 
-3. Para emitir um boleto, faça uma requisição POST neste formato: `localhost/emite_boleto?access_token={seu_access_token}&data_inicio={filtro_de_data_inicio}&{filtro_de_data_inicio}=2020-04-30`
+3. Para emitir um boleto, faça uma requisição POST neste formato: `localhost/emite_boleto?access_token={seu_access_token}&data_inicio={filtro_de_data_fim}&{filtro_de_data_inicio}=2020-04-30`

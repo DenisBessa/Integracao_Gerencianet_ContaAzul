@@ -1,0 +1,17 @@
+{
+  "author": "ContaAzul",
+  "name": "web-api-examples-authentication",
+  "description": "Basic examples of the ContaAzul authorization flows through OAuth 2",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consign": "^0.1.6",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.4",
+    "gn-api-sdk-node": "^1.0.0",
+    "moment": "^2.24.0",
+    "querystring": "~0.2.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}

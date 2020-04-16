@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Authorization Code with ContaAzul</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="login" class="row">
+        <h1>Integrador Gerencianet - ContaAzul</h1>
+        <a href="/login" class="btn btn-primary">Fazer login na ContaAzul</a>
+      </div>
+      <div id="loggedin">
+        <div id="oauth"></div>
+        <button class="btn btn-default" id="obtain-new-token">
+          Atualizar Token
+        </button>
+
+        <div id="vendas"></div>
+      </div>
+    </div>
+
+    <script id="oauth-template" type="text/x-handlebars-template">
+      <h2>
+        oAuth info
+      </h2>
+      <dl class="dl-horizontal">
+        <dt>
+          Access token
+        </dt>
+        <dd class="text-overflow">
+          {{access_token}}
+        </dd>
+        <dt>
+          Refresh token
+        </dt>
+        <dd class="text-overflow">
+          {{refresh_token}}
+        </dd>
+      </dl>
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
